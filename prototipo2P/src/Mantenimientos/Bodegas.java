@@ -157,7 +157,7 @@ public class Bodegas extends javax.swing.JFrame {
             Connection conectar = DriverManager.getConnection("jdbc:mysql://localhost/sic","root","");
 
             Connection cn= DriverManager.getConnection("jdbc:mysql://localhost/sic","root","");
-            java.sql.PreparedStatement pst = cn.prepareStatement("insert into bodegas values(?,?,?,?,?,?,?)");
+            java.sql.PreparedStatement pst = cn.prepareStatement("insert into bodegas values(?,?,?,?)");
 
             pst.setString(1, "0");
             pst.setString(2, txtbodega.getText().trim());
